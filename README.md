@@ -34,11 +34,11 @@
 ### 3. Extracting CCA results
 * The resultant data will be stored within the Matlab structure `CCAout`
 * Which stores important information in the fields of `CCAout`, such as:
-  + Individual subjects weights for non-imaging measures captured by each CCA mode (*grotU*)
-  + Individual subjects weights for functional connectivity patterns captured by each CCA mode (*grotV*)
-  + Correlation between the orthagonalized non-imaging and connectivity patterns (*grotR*)
-  + Loadings of non-imaging measures (i.e. independent variates) onto each modes connectivity patterns (i.e. grotV) (*conload*)
-  + Parametric statistical output (*grotstats*)
+  + *grotU*: Individual subjects weights for non-imaging measures captured by each CCA mode 
+  + *grotV*: Individual subjects weights for functional connectivity patterns captured by each CCA mode
+  + *grotR*: Correlation between the orthagonalized non-imaging and connectivity patterns
+  + *conload*: Loadings of non-imaging measures onto each modes connectivity patterns (i.e. grotV)
+  + *grotstats*: Parametric statistical output
 
 ### 4. Visualising the CCA output
 * Extracted are the connectivity edges and nodes that are most strongly expressed (i.e. top 250 connections) by the first CCA mode
