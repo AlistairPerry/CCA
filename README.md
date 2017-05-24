@@ -15,7 +15,7 @@
 * [FSLNETS](https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/FSLNets)
 * [BrainNetViewer](https://www.nitrc.org/projects/bnv/) (optional for visualisation)
 
-### Getting started
+## Getting started
 ### 1. Data required:
 * Functional network matrices of all subjects (i.e. dependent variates in CCA) (*connectivity matrices*)
 * Design Matrix of non-imaging measures (i.e. independent variates in CCA) (*DM*)
@@ -43,8 +43,12 @@
 * For example, for the top positive associations:
   + Nodes : `CCA_nodes250topposcons_mode1.nodes`
   + Edge : `CCA_250topposcons_mode1.edge`
+  
+![bnvhelpgithub](https://cloud.githubusercontent.com/assets/23748735/26386631/350232c8-408b-11e7-8911-0e75d6551479.png)
 
-![bnvhelpgithub](https://cloud.githubusercontent.com/assets/23748735/26386631/350232c8-408b-11e7-8911-0e75d6551479.png
+![hbm-mode1-poscons-axview](https://cloud.githubusercontent.com/assets/23748735/26386991/a8e4b59c-408d-11e7-808f-6e84dc274adb.png)
+
+
 
 
 For any questions and more advanced codes/data please contact Alistair Perry (QIMR Berghofer) (alistairgperry *at* gmail.com)
