@@ -3,6 +3,10 @@
 * Codes for CCA as performed in Perry et al., (2017, *in review*)
 * Modified from [Smith et al., (2015; Nature Neuroscience)](http://www.nature.com/neuro/journal/v18/n11/full/nn.4125.html)
 
+![edgebund](https://cloud.githubusercontent.com/assets/23748735/26387350/3a32b8f8-4090-11e7-967a-ac9ba5a72c7a.png)
+
+*Adapted from Perry et al., (2017)
+
 ### Codes included within repository: 
 * Normalization and decomposition of functional networks
 * CCA
@@ -44,5 +48,7 @@
   + Nodes : `CCA_nodes250topposcons_mode1.nodes`
   + Edge : `CCA_250topposcons_mode1.edge`
   
+![bnvhelpgithub](https://cloud.githubusercontent.com/assets/23748735/26387399/b53879e8-4090-11e7-977a-de4ea478fab8.png)
+
 ![hbm-mode1-poscons-axview](https://cloud.githubusercontent.com/assets/23748735/26387159/aafb3062-408e-11e7-9807-b862f3413ac1.png)  
 For any questions and more advanced codes/data please contact Alistair Perry (QIMR Berghofer) (alistairgperry *at* gmail.com)
