@@ -44,11 +44,4 @@
   + Nodes : `CCA_nodes250topposcons_mode1.nodes`
   + Edge : `CCA_250topposcons_mode1.edge`
   
-![bnvhelpgithub](https://cloud.githubusercontent.com/assets/23748735/26386631/350232c8-408b-11e7-8911-0e75d6551479.png)
-
-![hbm-mode1-poscons-axview](https://cloud.githubusercontent.com/assets/23748735/26386991/a8e4b59c-408d-11e7-808f-6e84dc274adb.png)
-
-
-
-
 For any questions and more advanced codes/data please contact Alistair Perry (QIMR Berghofer) (alistairgperry *at* gmail.com)
