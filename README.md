@@ -2,7 +2,7 @@
 * Canonical Correlates Analysis (CCA) is a multivariate analysis technique for maximizing the correlations between orthagonalized sets of independent and dependent variates
 * The codes provided here are for the CCA as performed in Perry et al., (2017, *in review*), where
   + CCA linked resting-state functional connectivity patterns to demographic and cognitive measures in [101 cognitively-normal elders](https://cheba.unsw.edu.au/project/sydney-memory-and-ageing-study)
-* And are modified from [Smith et al's., (2015; Nature Neuroscience)](http://www.nature.com/neuro/journal/v18/n11/full/nn.4125.html) investigation of HumanConnectomeProject data.
+* And are modified from [Smith et al's., (2015)](http://www.nature.com/neuro/journal/v18/n11/full/nn.4125.html) investigation of HumanConnectomeProject data.
 
 ![edgebund](https://cloud.githubusercontent.com/assets/23748735/26387350/3a32b8f8-4090-11e7-967a-ac9ba5a72c7a.png)
 
