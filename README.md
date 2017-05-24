@@ -47,7 +47,7 @@
 * Data is extracted in the `.nodes` and `.edge` format required for BrainNet Viewer:
 * For example, for the top positive associations:
   + Nodes : `CCA_nodes250topposcons_mode1.nodes`
-  + Edge : `CCA_250topposcons_mode1.edge`
+  + Edges : `CCA_250topposcons_mode1.edge`
   
 ![bnvhelpgithub](https://cloud.githubusercontent.com/assets/23748735/26387399/b53879e8-4090-11e7-977a-de4ea478fab8.png)
 
