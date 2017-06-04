@@ -79,7 +79,7 @@ NETd=nets_demean(CCAout.grot-conf*(pinv(conf)*CCAout.grot));
 %Extract principal eigenvectors of functional connectomes
 %Note: Number of eigenvectors will depend on number of DM's in the analysis
 eignum=length(CCAout.DM(:,1));
-[CCAout.uu1,CCAout.ss1,vv1]=nets_svds(CCAout.grot,eignum);
+[CCAout.uu1,CCAout.ss1,vv1]=nets_svds(CCAout.NETd,eignum);
 
 %Determine proportion variance explained by each eigenvector
 
@@ -92,7 +92,7 @@ CCAout.cumvarexp=cumsum(CCAout.varexp);
 %into a less-reduced matrix
 
 neweignum=floor(numsubjs*0.25);
-[~,ss1,~]=nets_svds(CCAout.grot,neweignum);
+[~,ss1,~]=nets_svds(CCAout.NETd,neweignum);
 for i = 1:neweignum
 CCAout.relvarexp(1,i)=[ss1(i,i)*100./sum(sum(ss1))];
 end
