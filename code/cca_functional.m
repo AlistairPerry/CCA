@@ -78,8 +78,8 @@ NETd=nets_demean(CCAout.grot-conf*(pinv(conf)*CCAout.grot));
 
 %Extract principal eigenvectors of functional connectomes
 %Note: Number of eigenvectors will depend on number of DM's in the analysis
-eignum=length(CCAout.DM(:,1));
-[CCAout.uu1,CCAout.ss1,vv1]=nets_svds(CCAout.NETd,eignum);
+eignum=length(CCAout.DM(1,:));
+[CCAout.uu1,CCAout.ss1,CCAout.vv1]=nets_svds(NETd,eignum);
 
 %Determine proportion variance explained by each eigenvector
 
@@ -92,7 +92,7 @@ CCAout.cumvarexp=cumsum(CCAout.varexp);
 %into a less-reduced matrix
 
 neweignum=floor(numsubjs*0.25);
-[~,ss1,~]=nets_svds(CCAout.NETd,neweignum);
+[~,ss1,~]=nets_svds(NETd,neweignum);
 for i = 1:neweignum
 CCAout.relvarexp(1,i)=[ss1(i,i)*100./sum(sum(ss1))];
 end
@@ -162,7 +162,7 @@ end
 
 %Calculate number of edges for each node in top positive connections (i.e. their degree)
 topnodesdeg=degrees_und(topgrotposmatsym);
-topnodes=unique(cell2mat(toppostable(:,1:2)));
+topnodes=unique(cell2mat(CCAout.toppostable(:,1:2)));
 
 for i = 1:parcnum
     search=find(topnodes==i);
@@ -174,7 +174,7 @@ for i = 1:parcnum
 end
 
 %Write nodal information of top negative connections for BNV
-fid = fopen(['CCA' '_' 'nodes' int2str(numtopcons) 'topposcons' '_mode1' '.nodes'], 'wt');
+fid = fopen(['CCA' '_' 'nodes' int2str(numtopcons) 'topposcons' '_mode1' '.node'], 'wt');
 for i = 1:parcnum
     fprintf(fid, '%f\t%f\t%f\t%d\t%d\t%s\n', COG(i,1), COG(i,2), COG(i,3), 1, nodesz(i,1), '~');
 end
@@ -198,7 +198,7 @@ for i = 1 : parcnum
 end
 
 topnodesdeg=degrees_und(topgrotnegmatsym);
-topnodes=unique(cell2mat(topnegtable(:,1:2)));
+topnodes=unique(cell2mat(CCAout.topnegtable(:,1:2)));
 
 for i = 1:parcnum
     search=find(topnodes==i);
@@ -210,7 +210,7 @@ for i = 1:parcnum
 end
 
 %Write nodal information of top negative connections for BNV
-fid = fopen(['CCA' '_' 'nodes' int2str(numtopcons) 'topnegcons' '_mode1' '.nodes'], 'wt');
+fid = fopen(['CCA' '_' 'nodes' int2str(numtopcons) 'topnegcons' '_mode1' '.node'], 'wt');
 for i = 1:parcnum
     fprintf(fid, '%f\t%f\t%f\t%d\t%d\t%s\n', COG(i,1), COG(i,2), COG(i,3), 1, nodesz(i,1), '~');
 end
